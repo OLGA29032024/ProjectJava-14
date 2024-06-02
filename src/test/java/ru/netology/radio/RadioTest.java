@@ -15,6 +15,17 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+    @Test
+    public void stationsCountOne() {
+
+        Radio radio = new Radio(30);
+
+        radio.setCurrentStation(11);
+        int expected = 11;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected, actual);
+    }
+
 
     @Test
     public void shouldSetCurrentStation() {
